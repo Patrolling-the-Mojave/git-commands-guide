@@ -17,7 +17,12 @@
 + **tracked** - файл был добавлен командой git add и не изменялся
 + **modify** - файл отслеживается репозиторием, но был изменен.
 
-
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+  modify    -- "git add" --> staged;
+```
 
 
 
